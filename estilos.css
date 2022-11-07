@@ -454,4 +454,13 @@ textarea{
         display: flex;
         flex-wrap: wrap;
     }
+    #formulario .container{
+        width: 100%;
+    }
+    #formulario .container form{
+        margin: auto;
+    }
+    #formulario iframe{
+        width: 100%;
+    }
 }
