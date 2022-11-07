@@ -72,14 +72,12 @@ function cambiarPersonaje() {
 setInterval(cambiarPersonaje, 1000);
 
 //Fetch
-let bPeter = document.getElementById("boton-peter");
-let bTomy = document.getElementById("boton-tomy");
-let bSusan = document.getElementById("boton-susan");
-let bBruce = document.getElementById("boton-bruce");
-let cVendedores = document.getElementById("caja-vendedores");
+let bPeter = document.getElementById("steam");
+let bTomy = document.getElementById("educacion");
+let cVendedores = document.getElementById("main-content");
 
 bPeter.addEventListener("click", function(){
-    fetch("vendedores/peter.html")
+    fetch("paginas/steam.html")
     .then(response => response.text())
     .then(data => {
         console.log(data);
@@ -88,7 +86,7 @@ bPeter.addEventListener("click", function(){
 } );
 
 bTomy.addEventListener("click", function(){
-    fetch("vendedores/tony.html")
+    fetch("https://www.aulaplaneta.com/2020/12/01/recursos-tic/steam-una-metodologia-educativa-para-el-futuro")
     .then(response => response.text())
     .then(data => {
         console.log(data);
@@ -96,21 +94,5 @@ bTomy.addEventListener("click", function(){
     });
 } );
 
-bSusan.addEventListener("click", function(){
-    fetch("vendedores/susan.html")
-    .then(response => response.text())
-    .then(data => {
-        console.log(data);
-        cVendedores.innerHTML = data;
-    });
-} );
 
-bBruce.addEventListener("click", function(){
-    fetch("vendedores/bruce.html")
-    .then(response => response.text())
-    .then(data => {
-        console.log(data);
-        cVendedores.innerHTML = data;
-    });
-} );
 
