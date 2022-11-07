@@ -289,11 +289,12 @@ width: 400px;
     border-radius: 5px;
 }
 
-#pie {
+footer {
     background-color: var(--color-negro);
     color           : var(--color-blanco);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    text-align: center;
 }
 
 /* ============ CLASES ============== */
@@ -341,3 +342,63 @@ h2+p::first-letter, h3+p::first-letter{
     float: left;
     margin-right: 5px;
 }
+
+/*============ bOTONES =============*/
+#personajedia .container, #paisajes .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botonera{
+    display: flex;
+    margin: 20px;
+}
+.circulo{
+    border: solid 2px var(--color-gris-claro);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#muestra{
+    height: 400px;
+}
+
+/*============ texto =============*/
+
+#personajedia img{
+    height: 400px;
+}
+
+
+/*============ formulario =============*/
+
+#formulario{
+    display: flex;
+}
+
+#formulario .container{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type="text"]{
+    height: 25px;
+    margin-bottom: 15px;
+    width: 235px;
+}
+
+textarea{
+    margin-bottom: 15px;
+}
+
+/*============ fetch =============*/

@@ -1,0 +1,116 @@
+//Galeria de Imagenes
+
+let paisajes = [];
+paisajes[0] = "https://lh3.googleusercontent.com/tXg0kRgP-gCyU5vjKvl3ieTBTvvuP3BeAwfwYkVAMV5HdX7v4Of5__71C9JVHlyRdY8MPcdEk5u1-p2AVU1GjZQHK8H4PpeIqZ9g7_6r-fLMDX8iwstyAZW0OqmK-qTI1Ts61bcYSq-lAWqJyXyuLFb86mlVQmCXrojhATfsi40RovBdazqnfHjC6Y2Y1a9uBQGFFyP1huIk87PhHUEUc88zWBu1QG7y-X2_TCXjPc2HH8Nc2BOUaKXO9bQEVxA-WFLtuFZgAIF9n1KxvaVA-5UyosZxe1fSK-xxKj0QVi0-bwu77PStxPOHey6bLVpfJ4_usop7bWeojUUMEmBAnMsBnn3aZCGaMjV2B95E-GF_0TkC-EbHgqEkl_w8cZrOYoiA5phIh4rhe_aUoY6Y-RS8Cc-uvXipbYxTSUf343X9DHfNubULhFWF6kqRwY8chjBQ9Pw3seI1BDrBGPR39OX0-uNofRXQTBus4Fkh9cwqg1Qh7i_hHLz6fX-WNWtUYnNFOrq2aGtzw_yhM1iY-Fd9Ln5eBCyII6GeTHteFJTSNIO0QtJhSGuh8Rv3roM2zyBanljgwN-iL2jHX9RS-gxyrXUI3vOcFgRTEmKuAgNeMmXfVkoYSL8rWMgfMHP_PRkddDGWZTDFcgAAF2DTv_K8JHhTT5_cPet_aD6-rFcDrEazZRKuZTxri7vfEDgOg0tAdP1W9wQxU1fz3KC5aOI50qqDJV0vyfpErf9HWR2EG2VPyjvHCig0_QHFagScSM-qCQRQsfnADnPYNCx6-_T2zrJ3ZsFsRImQqncdbMG3C9nDvG8g3UgykpLCVAWN5AnpzeFFKQAZKaquhamQNkiXDZ6ru8g-CIL9NMXUzVqmCvj3yhQHQ22gvBebZ6FSITVyf7JpP2f6GaHYbZh3A_ePqZMwSGs09ONnGoEn14e9-wXwqPc6yYQjhWBFrtz2FAfu8b9roYRn8Oqc_2FMjjpSXqiLYo2Uw08YiVEtgC9lkINDGsjIE-3WBrW1-UfCopIRZT8qILAlyNhZ6Jg5hQdu4ExI-g=w883-h943-no?authuser=0";
+paisajes[1] = "https://lh3.googleusercontent.com/tXleTROT-SqK1uG-OTOLxriVJXcbvaDgfoP9x36qZLbJEgfJ5Rwgakd9SvxJuDMiS0N2c9Ydiol2oq6nWk8xFKGJCtzw8Rvm-UQEDRwnqy29X0iGx3Op8Rvz7MgUAnLdc-J4tH-1V82bIVQBORfb4N5QecZWeV3k_0iO7SAkqCVbG8Y6SAW48f2DPRLILE8D9zrsMJcLGm8AAfBfWy-ZMghs0khltXBd22oacWXoo_6oFeN4ef7yfimJ3bBp2m8eC_IlZJLwMoBCLOOhDgXGxEa5sztnxiadAKKWFSotS7WATnVpWlQPUpaKaCZqCOiz2DCixCA144tjK9BdPyYx2YdFgLdjtUZ6e3-fpSPpBHlTrMbFtFb7gRWIvl-PYkocszf3xoRq9FW2OyiBLAGVZwE2k2MhIgPzjW8qKJoX8Nqhvb68sFq38NcnmXNLDa4cm4CLWUhmEeuAJjd5ujxdXq8sHkzNdJw8W70Dugli4jJkwREdbBr89WPUZkHyfbg8unoD03dSA82N_39B_XjrrsXpM5tkS8CsmEAXvdZZ9vu531jm7xuKCFuVzADjZhAKZXsbaN7jGCnnLUquyNbncx6oMsUeYgmoob0gfTJFosD0S3PNye9VcnsYMC4Q-ARuya8NaMfgqkM_uAVEtyY6j_sL4dRx4Mw5faWLu67kLJ0vTpBZ9NfUYaD15_nrr8zh_S-zJpIH6tDhoOfCEZj72be5oIRc-bFjLQxfaTScIL2-STP57pF7k2KTt8OzX--4iYsWTKMF-VMh9uaIoQbFwnBVd_U3RGPmXY0QyiZpQCHPvVq1BkBoySJjC0xDDTa84W8X1ABFu9lA7K-6Q37AoSDVDpYPIHAunF-oSkeOPJicih3yZASjMG1bIK8BpkM_kaPmHOjmzOETgP9oKRHweYLcO3l2GnrJEDcBsH018T6ss8in_3EIsIkTzeyXg778j1nz8dC3kkuWtYOnh04VStYKxuPQ2lyG0UA12VVZP_SeNGucdjF1oeyLwkqa32wj5Pkud3lkHii8rH3A_4G-J7ViC9Nr2A=w482-h492-no?authuser=0";
+paisajes[2] = "https://lh3.googleusercontent.com/5Yp9tzVrVnLJ0pKWSDWYdJ2PoXwRZ_jBBFAswoYqPCV0gRaU7H7IoTDpvn5RL1qBEuWychnzjLb3b0l5P4ZIe7PsAj3WH2xOKKX-ass83qtnfuAb_Akvh06liJhJOqgkkm6x9jLUCLnmDM0gZ5fxoTTXCiN8GLbIKtTLNweD5FDdkcOYJFNDFvb9k6seC4gED52bwboWzl0XhF99oYWv7Z0hBTVBQhk-1ymSQMoYnqYyec-1SEVJz33sus7n1TL-AwE4vIp0BpmLUX41i_fLxrcLdGCOSxprmt0gCi_7VPZgqciFQ-lFnqQBBCUU5OM5dOij_ETyCrfLEGUofP0pg6Fyf8ULik70bdBK1TYzVIvzQd5V_Xol4HF4ya1XjFs-Idqaw2KmDbxIp5vH2wVFGf-d3FqAGWCxtNfg7tQW8Cq8m2oeu57Dc78gnCH5B67IvQeDaGgsURfOgGr92pr9J-RHE1KTmMmIhgKiQN3C43prOSsxvSXvz510Kb-AsQ2Oy4ogAJR_9ymFVcs_iSxpKpwZ9qN-pjZrn5lgUzdmCugQU7udDE-6P06T7xiLeNBhcYp9C89MA-7IhVlCzzHl1J4l-5ndEKFpeschIuVyyOx3Gn4NX60g3LKAN_y7Wl2WSPIsuiO-ISGD0VV4miwis8c_ES-n7TxLgi4FqiRQZqvBESDZ6QbGnw1n-MA5sDwpJ8eKUYlqky1JLrUMhXp-7vHIBQyZKrZ5Qf0bKxbICjAIMqzacVx4yhgqc3QUaog0E_PE6wA3_vlA524sTTPvn43_8U4xwibXXKaN_xt51GMyJpvAl-YsaiSQUJ2nqPYO0yKzMfmfGybcewSg8aW_ZJoncAfeBlqya-bShWbMHVy4IhUDEA-IAvL77AlAA-wqljdQh2uPuneEbkJguVATQpjxM77pf94lVE8PgLQK-DKbkeOX1TUFwUS_ORezrA46Ibfy60erasS9PMe2nsci4Znw_HF8-O_fEkjf1t2gsrvrvwplfasccpZkmC3hYETYcvA7Ve4mO4dHIhS27URiYmCE0accKA=s420-no?authuser=0";
+paisajes[3] = "https://lh3.googleusercontent.com/AhrJ9Wf8fzOJD2Ec8MVkYcDKdtswQ4gl2zNqnnip8CYubFjsqLoJmYr3VVWYIV84Bdlgq6k1IG-BeXTT6qPMCbqHQlWeBETw3S83cXkriNPAT24TsVhtD8gxlkpYeqMX_0hxJ3fwF2A7U4fOiNbTuEfUjTgHz9YUNSVD8PNyhpSBJSFF_0g-Vmw7DB-tjLRcCJ-8msfffLUelGm7oVTC8UOSk6ssmSzikl4ml4EIH0XgDNLMVTVdXiS1fUyZPLJutoc9EkgcvnmvIKbJTpVvJFvqgCJNmLQDD0QYDi8ssUDi4z6ljtQ4gelmKTpi3-5kP_NyaoLXH2Aqu84awU9esdwennPUzOQ103etsyZ8D-c1KbENBanAc3DtndZ42wQBMgYTyTw0mcFiSNxcSl6QHHhwHVD1Yy4o_UgKdjE42rZPzNSyNU5U1Wzkcwzr7acKvn0VcefkM445KLBFYzER5OOn1avQXcIe49wyawkzAu6ExI2uou_YXg4OwpeuJW8guxN8Jsm5Eq2Pf1vtAhjVETuMke0yy6q3NpN0mWHkC9Dkruecu4Z_-TKD3U2UeWGGUdqVDLuc-zhTSnK3ahNRIK4nnlvCCkwgpVCAL7ZpOqVZue-G8FhfjbHBDMZhJ_sCFM6wh23KvzAjHXHLwc9SH4wbsAMGH-Nclzkxuj42rgkBr1YDoUb8xMoL4vbmklPmMLxC1FknFF0UhZNwUUpcw0VF3vXmQMLSfhb-PVaM6TFjnmt1q0XggWdy8g87ltKuWeGY5byHDULXXc84V4CoZ5Klb2KGE9NdZs1FPv05w1T_xU79GRg9AMG4woy2a7DpzwolnVxZK0TK2r4dd-OAJpCX-gwVtIOwJDY_o3BjzPY1daEzmatCTF9PD6LKaI1oeoB_nZ8uzgKekUBm0mnrOBihqXRHfL82_XQfrLpDV8zlkKGTh8J8AQesBH4s_MvSV9PnZG0PtRCuDfngiIm-Wp0iyzyuca-lCye7unEmVvvbFEpta5zjHyvshZ2Rl5RQNXnfvQ3zuSgincl6ThP4TCTMolCEJg=s420-no?authuser=0";
+paisajes[4] = "https://lh3.googleusercontent.com/JAaY6eum8VBB-kYsx-5dEtwdkdnPQHi8RgHkZzQUYXQB9iCXGM5ZFLSVXJRY4isbrOaF_T52CFAzOaSVBtdKiGSzYljJIvKkWFeIobYtNGzgc3faA6PVBcyjecftMWf-mWX7gKDw7YQbLs5ExYSJe7s-BC-JXZrrn-aHhQZ3oRxqSswtJl7pggMfJZ12sgy_YoDYgfgkL6xoypWo4sgGRTZjEY4Q9CIdp8gLOuVlQmT1sgL05YXNXqpyhl4M_eUec8rFGsTw1yrEbekf5jtbZE1fmGzwbyyN-WQPM6n4l2FgxVzl-ts783z0Jauxn7mRiVdBxRlORksg47Pi5aobv2PxWzLkDZtS5uDvRJSirGlWaVQ_VLbKydtEqtHdWeEGEtHnr2G2XqdrNWW3gJiGZWIVWVr8kGBZ33eFLsXJ8qAPgSyiziCsyAE58ypMJ8jgc1wcH2XU1dhfM0cWd9V96Gzl5ISMqjydnLdL3RlKr8s1uYJBmvPvvaraxwR55ffEcVLj7SMbIOsl17JkyySATdg040CZgFfqoKEzOPMFUb3wsDlYet8WKOuCQii8Uv0ZCOYQ7K28NDrjA77LYGgPthvf7flR5lDcycPHlDa9HTwgrL3gs_1n-AYAWqcSfoB30JLyJCyAtXot5F_sItcCjxO8_W6vvcSoTm5MtQc1sTYCU_lugvOUr8Hmp8lKiMXiNXcfzb8F7j4xkJf_Artg8P--cACV1p1GvtyDDzgJ8uYIck6BdbOBFMkQL-3uZbghK4Y4GrDbdKh-MVjRHALAjw0dsYUCEIvKCpCgN_O0RPJb8RGWI_Q4sF-u4SW3aZEN1p5JlXFxU33g5jfXbk1Wx3HxMZ1l20g-Umbq5bb_qu6DS45ot-kZR9c5bfevkbY5No60BiV6sc2Zm-7eA42V5oJ_FGxcGzOwraj0QV8RpWicT6DlKq5f_OeVPyaI_RW7SQZ8sT7ClSQ9cdnSjtlpJn2di7j_qJYtwxBDgwV9lKNdp4FoxWdHdxrUHdsEbNG477WhncG2rD5c0qNbeGhF_r_DJNYgQA=s420-no?authuser=0";
+paisajes[5] = "https://lh3.googleusercontent.com/GPwlV-mspHKTjNCXOYFaWThZq4wCIvonUWOYAAa2jKyTcKdVCnaI14aTHWnR1ctM2_PGiF6sK2KURd_ugO86Vmd868GEXR6Dw55xrRBl9iAYA5HV_nKmO41eMVcyCME8QYNz8F_Jh7G91CUg7vOEzTUai17ct74ockBZKxIkYiSXpxG-nBrt4SRdrrsH_OduFaD6tcMFsMy4ZSR49ClabM9RUJqKW88c1n9DC0YLquJAWKQYwWmMP59wsAYpjLrXcymY7tdKfJv15ynwCYzk9eL0jHKly1dGn2RHDQY_AhxlNDROr1An3hTG4knGMbwzlNMzxc4EijTaPh8-Yit2DPj-ZtV807AK2XVvHi0kmFPSS9MzKFfnGVPnDAgfSH2OtDYBAMvwSOti1Uh1n-nELR0u7cGbCBP1dt6qADiXiwq7FBhLPsLyMK6mgVlILbYFsKIGq2yMeySlUm_KybkJXYnmdovK57ocuOWiQjbnQV4EUjG0ArsBNBdvancrMx9HtD902OnJWWA3dreoQ7NMsa633qcaLN18tslY1pilpHdoPO3ZcyNQ7vnWY7yBnLsS9TPH2F54geelvidRe8zDD7YBvWJZGVz-TgPOVoHdAUchetgPnd6-JObva--ZXmjaxk8o6C0MUgcQnAarA3CaNswBTlVckddKj823vk5x04n_veAFU6hbTSOFcK39zKeEbOe5cXyK9cSftFhUIOGrKv1aU6cCbm_pIM4x7gyc9NY9NQr48QbufNtI1cjKB8Y6p0svYy3G8ZhtSmvaEo5ltGVhRyhJFGwWhcyyBpZxxCfyDSZfthjTczfoddbQm0tqGGMWbUZhizv3PChLkJRtLGHDBvDeKRlaSYYhyVSF9NZmnXhmFtE6sKpPInAgvlNnlg9znYxvBK-DGiCWJL3yAlSVv-OpG6RDCx_JEkTLI8P_4P6bKeogEu12nKGvxWqa08VlO5nbpArrPo_Xeg-BM_yJrhdly2m_7V5F6Fxw8dVjeNmgetIex4ko6ovPx073euRVf8HOxdhESKpsb36uI6HK9zHh5g=s420-no?authuser=0"
+paisajes[6] = "https://lh3.googleusercontent.com/nhQsrCMe_VJ-dab5vPCGg9JdMQtOypmCazrXvIgf5DLxjEB34ICT-jSNn03ghFNahATQwpseDgWrD7qngrjJcexiQozCPTW3B8bicMLAA93lF7zdxok8DoKQBrcoUfUfuHIYyXZnl-WL8ZwsAoq4odSeb5-SPotqYKc9MPBAVXlaAbuYs22BSsb9re0OUtexlsn5IJPVfl6Bk8qJs73DnIijA3TFNIiThFINS2Y7TtHq6_qkVNjlXEQdtsrLV4F4ZLbJYRmEblpTtj0-WKtHYungUUCPBZFCktu6V_HZXi6dwcOF9tlDisgio2ztAqGtC2BOGHigSn_g7MzUeAGVp8DeLnChugl4LLa3918ItnfkPyXJwfqCKIKeyYGOue4b8fmTvJlcLYhSV52Yai2aFz_DPMpMktGjH3FO98LG3DsWTEJnf1p06VWs99VWI9U6vcbfj3MhYnb7CoQ5Ep1wt3fXbjZY_B2z8Rg08yzb21afWATh-My0BZWTDJg9ZqZTM4lvHFhZixPwXg032r5Pxef8nnUha8jCSZWNzt9msU0zfubNQlBoZeErc5ni1Rx_gwVGQ8jAligPDFERml6fQvXJrc4zTnPW1ymUzMy7f8t3KugETgQZ0zwPCe71wxCHuzcNWzMMcvEGp_cCHd2iXw0_CFvl73HySKc5ahykbx__R-1V4-NZIAbnKKVM4A_uHfzYnQIj4CPgD4dzWU0vyS5MBCpzzAP44zNc83m6XwVYcKVmOulVbVdXFkqKNTa3MkLdYaW7gnY0hClciAjcL3c5KIU_Mwf5dIOLGwyVINBeNtEk_1l50khbe27McnyYyR9vTy5zaAzXbS_bTf6mqV7E-MWtXzg0exCNOyyKrL7IEY00WlP9qW4F24ZgnMLAs2kCutIUa79Btii2I2eqzY8nn8h7szLz5_rZQWYnzTeD3DnpEDML5ZfeV-R21iPxCLdgyjOTXF3vGnmfi7YOIK6Ftr3rC-XXW9fcvdFkDtzPnMyQp5M4p8HDoUP66oCeSsel2TW_Po2IcuMqEhsAokPdc1Q9GA=s420-no?authuser=0"
+paisajes[7] = "https://lh3.googleusercontent.com/3NxQg2ltNGi-qUrDZK092gTo6sCIXYkP63dzxQSyKwlP8INu8lyP72GpVHnea9-bzwtiX_Nk13Y604fvv0uN1kqvKq1DN9Qj58lZed6VgVC9H3mSlBgmb5zjH93fdf9vqQASwsplSk3GHlepZ7Hj1fgt_XqmwkYDgSHkDQ4IZeKgem3GRgm2Oe_CaoAfuIzLw7yhvstgwO2xEiTVBFqXdZchi34LHG_yApmPjL-tugj1fH7US_KQ1SM43wPxjyLOGl76d2d52o8QKLdaO43Rufo4Dq0b-2wxr50tGD41pNzPG9Y0kBnoMN6UpObGXHfST2oj9CK8PA9iuDgv-6G7CZvi5vJH4dCQTkN0EfgVCb2_lusBlI7AixQNEBQLVDS5_bm3vv6YVlYXvEcKxg9aentUcLK5gaXSOJTPrT9QCxSdZwMK0pM_D3GhE-sZNYhb3odpHhNH1N1Zkdzx0mjJr8zJ8V6Ctc-SNQXl3L6oU87Fm78qwvM3D0ic1df30bTkyJ8hfiulBEI2JtijhZsvR_mgCZFX1ndt7mLCeJR9QbvdQrEAfImT918B2EtecqektdSVeUnPVgP2ejZCU7wvXAQpCFw_9ihIIFxmqaviMvc67M1gMlvqbTt2L8Q9LOLCt1OTG9QsH8rjWjArA7WaplYTMfn3uCmJtMYnFf6sUe8s3luOfOyiviVvZMDg1d5Kfp9FtMVRV8EHapqLKbw9mLGryZFzG9oxccNflCbM9ljgB0il5ukUeBPF_pZUoq5owi2ZlA3cRMlL4Lvk6wsRWLX6FiNNVAJ29cl89TaByiIafrG3iZ-FOtt0wA-SlxKuOvHFD8Ij6hAZXbB-H-JYdGt-hm8UxVv71ilvkcjW2twmjEe0pP11k8raZUnN2SZi9THUzSCznB40_YYzDucMSORtaRBRo0m6PpHj9HnOr_q3cORX0ef901mrZ7d3QixemcahEm3JTny9k2ZHF0tQL-yZYEwbR8QmRM9m1hrwt8iB745HCWWY1dsLi4iDIvu58PjYHjipHoBpcIMrr_OU7dXV0krR5A=s420-no?authuser=0"
+paisajes[8] = "https://lh3.googleusercontent.com/ljdu1_-4QnsAFz8y_A0vjLeXMC4ee6O14iGFuMANtYx9big9ZnrVFgFUL9DNJqhummFo7xDs0NiLEWhMey4yE8a0RwaJRsvxPsazqgEPmcX8l5EGsyc2qQuN0--SRPZOTZyreUSzxKkW9efJYE8QWEYcTq_ROmVtD7sg0gJgEe50HHYokv-o_sr1hgJ0z3uvvO3Wm9-pqQ5lxF2Zcu7a1PJGahvaghUX3g2wi40iqVyx6mWaL93znBS1iH6_4xZya2K7lSuaHpMtRyokx9hY9S1j1AwwB2csRA-h6UHpBJexOptQBTxuiWTVz_sfHi8yuTYwJf7Axi1TucHzIKVkQ9543KTrABkkU0BpNdjV3sVP1Ql1tJGiT3A-B4PfvOwXFtMHnit0V7QUv5Z8mkWjLmSMQ17Pfa8z030g5Xo1GCqACXDJdungPAAPU4IpoVB0svXx4FGU3gmKAgOnl3okF5sMavk7T7VjKHGBc1UsciN6xDrtrMmtjx0vGQD-Yz3JzxyzZ5fIyUIzKgfx9dybMbQ6hO1wfSDnVCjy3LC0Gw-GIWaufmJBUkt7IQAeMNy0GC--HvrIKuIr8DG1Uh4PnTMIy8g589yzNGiC35PM7-j4xMR1V4bGtOQULBrLBQSMKjstGRbKER6jMwUDXx683T7xNqMP9oQLi8-jf6JCqeY5-2Ag5OgW_fJP7NIBXkvXMP-2ESfwVj62cJMeCArvB1_79sECnYR-1j4z5-oEGS08OyIwdDnyJ25MSyg6YZGARvJX305jxWKmVHI0x-jgPUj6gMM8tlIv3ginyqFB_g37vysYKVONFJoRp6jx-nLaXPZ7jj2j2Wx_vm4KPTC2TlwKUQUa0jZr3VBuTJRG5iiAOSGSzHtfMuX-__02VyNtIojxQeiSAhkUGB_WM0WWNny2393tV7d3tfhqE15lRiHsv0So9j2j5-30Eg-cqeCsTKLjrYfLGpB5xtnC813cW6n5t3YeiiNWllszAjQAa4IFOND9jMMvv-C_UWT952ptz1Ugz7wFLztm4RuAoyi9Bvn-g7g93g=s420-no?authuser=0"
+
+let muestra = document.getElementById("muestra");
+let bAvanzar = document.getElementById("boton-avanzar");
+let bRetroceder = document.getElementById("boton-retroceder");
+let posicion = 0;
+muestra.src = paisajes[posicion];
+
+bAvanzar.addEventListener("click", function () {
+    posicion++;
+    if (posicion === 8) {
+        posicion = 0
+    }
+    muestra.src = paisajes[posicion];
+})
+
+bRetroceder.addEventListener("click", function () {
+    posicion--;
+    if (posicion === -1) {
+        posicion = 8
+    }
+    muestra.src = paisajes[posicion];
+})
+
+function avanzar() {
+    posicion++;
+    if (posicion === 8) {
+        posicion = 0
+    }
+    muestra.src = paisajes[posicion];
+}
+
+setInterval(avanzar, 2000);
+
+//Texto cambiante
+let nombrePersonaje = document.getElementById("nombre-personaje");
+let personajes = [];
+personajes[0] = "Ada Lovelace";
+personajes[1] = "Marie Curie";
+personajes[2] = "Lise Meitner";
+personajes[3] = "Cecilia Payne-Gaposchkin";
+personajes[4] = "Rachel Louis Carson";
+
+let imagenPersonaje = document.getElementById("img-personaje");
+let linkPersonajes = [];
+linkPersonajes[0] = "https://i.blogs.es/9a43ad/adaap/450_1000.jpg";
+linkPersonajes[1] = "https://upload.wikimedia.org/wikipedia/commons/5/51/Marie_Curie_%281900%29.jpg";
+linkPersonajes[2] = "https://losmundosdebrana.files.wordpress.com/2015/04/lise-portada.jpg";
+linkPersonajes[3] = "https://www.buscabiografias.com/img/people/Cecilia-Payne.jpg";
+linkPersonajes[4] = "https://upload.wikimedia.org/wikipedia/commons/f/f4/Rachel-Carson.jpg";
+
+let muestraPersonaje = document.getElementById("img-personaje");
+
+//Cambiar personaje
+function cambiarPersonaje() {
+    let aleatorio = Math.floor(Math.random() * 5)
+    nombrePersonaje.innerHTML = personajes[aleatorio];
+    muestraPersonaje.src = linkPersonajes[aleatorio];
+}
+
+setInterval(cambiarPersonaje, 1000);
+
+//Fetch
+let bPeter = document.getElementById("boton-peter");
+let bTomy = document.getElementById("boton-tomy");
+let bSusan = document.getElementById("boton-susan");
+let bBruce = document.getElementById("boton-bruce");
+let cVendedores = document.getElementById("caja-vendedores");
+
+bPeter.addEventListener("click", function(){
+    fetch("vendedores/peter.html")
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        cVendedores.innerHTML = data;
+    });
+} );
+
+bTomy.addEventListener("click", function(){
+    fetch("vendedores/tony.html")
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        cVendedores.innerHTML = data;
+    });
+} );
+
+bSusan.addEventListener("click", function(){
+    fetch("vendedores/susan.html")
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        cVendedores.innerHTML = data;
+    });
+} );
+
+bBruce.addEventListener("click", function(){
+    fetch("vendedores/bruce.html")
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+        cVendedores.innerHTML = data;
+    });
+} );
+
