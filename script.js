@@ -86,7 +86,7 @@ bPeter.addEventListener("click", function(){
 } );
 
 bTomy.addEventListener("click", function(){
-    fetch("https://www.aulaplaneta.com/2020/12/01/recursos-tic/steam-una-metodologia-educativa-para-el-futuro")
+    fetch("paginas/educacion.html")
     .then(response => response.text())
     .then(data => {
         console.log(data);
