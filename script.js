@@ -19,7 +19,7 @@ muestra.src = paisajes[posicion];
 
 bAvanzar.addEventListener("click", function () {
     posicion++;
-    if (posicion === 8) {
+    if (posicion === 9) {
         posicion = 0
     }
     muestra.src = paisajes[posicion];
@@ -35,7 +35,7 @@ bRetroceder.addEventListener("click", function () {
 
 function avanzar() {
     posicion++;
-    if (posicion === 8) {
+    if (posicion === 9) {
         posicion = 0
     }
     muestra.src = paisajes[posicion];
